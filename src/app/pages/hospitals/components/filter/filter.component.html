@@ -1,0 +1,15 @@
+<mat-card class="input-container">
+    <mat-card-header>
+      <mat-form-field class="w-100">
+				<mat-label>Filter</mat-label>
+				<input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia">
+			</mat-form-field>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="d-flex gap-8 justify-content-center">
+        <button mat-flat-button color="warn">End Session</button>
+        <button mat-flat-button color="warn">Suspend Logins</button>
+        <button mat-flat-button color="primary">Resume Logins</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
