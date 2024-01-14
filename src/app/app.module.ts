@@ -11,6 +11,7 @@ import { UsersComponent } from './pages/users/users.component';
 import { MaterialModule } from './modules/material.module';
 import { FilterComponent } from './pages/hospitals/components/filter/filter.component';
 import { TableComponent } from './pages/hospitals/components/table/table.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { TableComponent } from './pages/hospitals/components/table/table.compone
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     MaterialModule,
   ],
   providers: [],

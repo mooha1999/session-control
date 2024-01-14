@@ -1,4 +1,21 @@
 <div class="d-flex gap-8 flex-col">
+  <mat-card class="input-container">
+    <mat-card-title>Choose a hospital</mat-card-title>
+    <mat-form-field class="w-100">
+      <mat-label>Hospital</mat-label>
+      <input 
+        matInput
+        type="text"
+        aria-label="text"
+        [matAutocomplete]="auto"
+        [formControl]="hospitalControl"
+      >
+      <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+        <mat-option value="Hospital 1">Hospital 1</mat-option>
+        <mat-option value="Hospital 2">Hospital 2</mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </mat-card>
   <app-filter [dataSource]="dataSource" (input)="onInputChange($event)"></app-filter>
   <mat-card>
     <mat-card-content>
